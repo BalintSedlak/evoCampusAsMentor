@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>EvoRpg2.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Audio\GameMusic.mp3" />
+    <None Remove="Resources\Images\backgrounds\camp.png" />
+    <None Remove="Resources\Images\backgrounds\field.jpg" />
+    <None Remove="Resources\Images\backgrounds\forest.jpg" />
+    <None Remove="Resources\Images\backgrounds\house.jpg" />
+    <None Remove="Resources\Images\backgrounds\lighthouse.jpg" />
+    <None Remove="Resources\Images\BestBackgorundEver.jpg" />
+    <None Remove="Resources\Images\border.jpg" />
+    <None Remove="Resources\Images\bridgeCat.jpg" />
+    <None Remove="Resources\Images\buttonbackgr.PNG" />
+    <None Remove="Resources\Images\catcat.jpg" />
+    <None Remove="Resources\Images\chonker.jpg" />
+    <None Remove="Resources\Images\dash2ORIGINAL.PNG" />
+    <None Remove="Resources\Images\dash2UPGRADED.PNG" />
+    <None Remove="Resources\Images\inventory.jpg" />
+    <None Remove="Resources\Images\inventorybackground.jpg" />
+    <None Remove="Resources\Images\Inventory\keyring.jpg" />
+    <None Remove="Resources\Images\Inventory\Sword.png" />
+    <None Remove="Resources\Images\key.jpg" />
+    <None Remove="Resources\Images\playStop.png" />
+    <None Remove="Resources\Images\questbackground.jpg" />
+    <None Remove="Resources\Images\SilverKey.png" />
+    <None Remove="Resources\Images\VolumeDown.png" />
+    <None Remove="Resources\Images\VolumeUp.png" />
+    <None Remove="Resources\Images\you_will_never_have_a_good_wallpaper_by_fabrizioroccapc2-db0byj0.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Audio\GameMusic.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\backgrounds\camp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\backgrounds\field.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\backgrounds\forest.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\backgrounds\house.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\backgrounds\lighthouse.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\BestBackgorundEver.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\border.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\bridgeCat.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\buttonbackgr.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\catcat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\chonker.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\dash2ORIGINAL.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\dash2UPGRADED.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\inventorybackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Inventory\Keyring.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Inventory\Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\key.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\playStop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\questbackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\SilverKey.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\VolumeDown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\VolumeUp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logic\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\you_will_never_have_a_good_wallpaper_by_fabrizioroccapc2-db0byj0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\Inventory\inventory.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

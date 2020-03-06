@@ -1,0 +1,79 @@
+﻿<Page x:Class="EvoRpg2.Views.Pages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EvoRpg2.Views.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMenuPage">
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/Images/chonker.jpg"/>
+    </Page.Background>
+    <Page.Resources>
+        <Style x:Key="BetterButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Foreground" Value="Orange"/>
+            <Setter Property="FontFamily" Value="Comic Sans Ms"/>
+            <Setter Property="FontSize" Value="50"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin">
+                <Setter.Value>
+                    <Thickness Left="50"/>
+                </Setter.Value>
+            </Setter>
+
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            BorderThickness="0"                           
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="Crimson"/>
+                                <Setter Property="Margin">
+                                    <Setter.Value>
+                                        <Thickness Left="70"/>
+                                    </Setter.Value>
+                                </Setter>
+                                
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+
+        </Grid.RowDefinitions>
+    <Button Style="{StaticResource BetterButton}" Name="_ExitButton" Cursor="Hand" Grid.Column="0" Width="300" Height="60" Grid.Row="2" VerticalAlignment="Top" Click="_ExitButton_Click">
+        Exit Game
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button Style="{StaticResource BetterButton}" Name="_StartButton" Cursor="Hand" Grid.Column="0" Width="300" Height="60" Grid.Row="1" VerticalAlignment="Bottom" Click="_StartButton_Click">
+            New Game
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button Style="{StaticResource BetterButton}" IsEnabled="False" Name="_ContinueButton" Opacity="0" Cursor="Hand" Grid.Column="0" Width="400" Height="60" Grid.Row="0" VerticalAlignment="Bottom" Click="_ContinueButton_Click">
+            Continue Game
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        
+    </Grid>
+</Page>

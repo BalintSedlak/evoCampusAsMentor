@@ -1,0 +1,1 @@
+This is the latest version of the evoRpg program that was presented in the 8th semester of the evoCampus project. This is a point 'n click based graphical version of the EvoRpg program. In this version of the program the user can navigate through the advanture by clicking on the different objects on the GUI. This was written in C# with WPF graphical subsystem.
