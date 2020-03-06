@@ -1,0 +1,1 @@
+This is the latest version of the evoRpg program that was presented in the 7th semester of the evoCampus project. This program is a text-based game that uses a text-based user interface. This was written in C# with WPF graphical subsystem.
